@@ -88,11 +88,12 @@
             border-radius: 0.5rem;
             font-family: 'roboto';
         }
-        ul {
-            line-height: 2rem;
-        }
         li {
             font-size: x-large;
+            margin-bottom: 1rem;
+        }
+        li:last-child {
+            margin-bottom: 0px;
         }
         h2 {
             font-size: x-large;
@@ -162,9 +163,11 @@
             <li>Download Vivado 2019.2 (the final HLx version that has the WebPACK edition, which is the only free edition, and the one required by this class) from this link: 
                 <a href = "https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2019.2_1106_2127_Lin64.bin">
                     https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2019.2_1106_2127_Lin64.bin</a></li>
-            <li>Start a terminal</li>
-            <li>Run <div class = "codeblock">sudo apt install libncurses5-dev libncursesw5-dev libncurses5 libtinfo5 libtinfo-dev</div> in the terminal</li>
-            <li>Once this file is downloaded, go into the downloads folder in the terminal, and run <div class = "codeblock">sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div></li>
+            <li>Start the "Terminal" application</li>
+            <li>Run <div class = "codeblock">sudo apt install libncurses5-dev libncursesw5-dev libncurses5</div> in the terminal</li>
+            <li>Then run <div class = "codeblock">sudo apt install libtinfo5 libtinfo-dev</div></li>
+            <li>Once this file is downloaded, run <div class = "codeblock">cd ~/Downloads</div> in the terminal</li>
+            <li>Then run <div class = "codeblock">sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div>in the terminal</li>
             <li>Enter your username and password from before</li>
             <li>Choose to install Vivado</li>
             <li>Choose to install the WebPACK version</li>
@@ -182,21 +185,17 @@
         <h1><u>Setting up MARS(Just copy paste these commands in order):</u></h1>
         <ul>
             <li>
-                <div>Start a terminal</div>
+                <div>Start the "Terminal" application</div>
             </li>
-            <br>
             <li>
                 <div class = "codeblock">sudo apt install wget</div>
             </li>
-            <br>
             <li>
                 <div class = "codeblock">sudo wget -P ~/.local/share/applications https://cdn.discordapp.com/attachments/920875012234289246/930995632515211335/MARS.desktop</div>
             </li>
-            <br>
             <li>
                 <div class = "codeblock">sudo mkdir ~/.local/share/mars</div>
             </li>
-            <br>
             <li>
                 <div class = "codeblock">sudo wget -P ~/.local/share/mars https://cdn.discordapp.com/attachments/920875012234289246/930995668670091304/Mars4_5.jar</div>
             </li>
