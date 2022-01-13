@@ -180,6 +180,7 @@
         <h1><u>How to install Vivado 2019.2 for CMPEN 331(Linux)</u></h1>
         <h2>(Alexis Dumas approach, don't say a trans never did nothin for ya)</h2>
         <ul>
+            <li>Boot into your Ubuntu Virtual Machine, everything below assumes you're in your Virtual Machine</li>
             <li>Make an account on <a href = "https://www.xilinx.com/">xilinx.com</a></li>
             <li>Download Vivado 2019.2 (the final HLx version that has the WebPACK edition for Linux, which is the only free edition, and the one required by this class) from this link: 
                 <a href = "https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2019.2_1106_2127_Lin64.bin">
@@ -195,11 +196,10 @@
 
         <ul>
             <li>Run <div class = "codeblock">sudo apt install libncurses5-dev libncursesw5-dev libncurses5</div> in the terminal</li>
-                
-
             <li>Then run <div class = "codeblock">sudo apt install libtinfo5 libtinfo-dev</div></li>
             <li>Once this file is downloaded, run <div class = "codeblock">cd ~/Downloads</div> in the terminal</li>
-            <li>Then run <div class = "codeblock">sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div>in the terminal</li>
+            <li>Then, run <div class = "codeblock">chmod +x Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div> in the terminal</li>
+            <li>Finally, run <div class = "codeblock">sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div>in the terminal</li>
             <li>Enter your username and password from before</li>
             <li>Choose to install Vivado</li>
             <li>Choose to install the WebPACK version</li>
@@ -214,7 +214,7 @@
     <br>
 
     <div class = "card">
-        <h1><u>How to install Vivado 2020.2 for CMPEN 331(Windows)</u></h1>
+        <h1><u>How to install Vivado 2019.2 for CMPEN 331(Windows)</u></h1>
         <ul>
             <li>Make an account on <a href = "https://www.xilinx.com/">xilinx.com</a></li>
             <li>Download Vivado 2019.2 (the final HLx version that has the WebPACK edition for Windows, which is the only free edition, and the one required by this class) from this link: 
@@ -237,11 +237,12 @@
     <div class = "card">
         <h1><u>Setting up MARS(Linux):</u></h1>
         <ul>
+            <li>Boot into your Ubuntu Virtual Machine</li>
             <li>
-                <div>Start the "Terminal" application</div>
+                Start the "Terminal" application
             </li>
             <li>
-                <div>Run the following commands in the terminal:</div>
+                Run the following commands in the terminal:
             </li>
             <li>
                 <div class = "codeblock">sudo apt install wget</div>
@@ -250,13 +251,10 @@
                 <div class = "codeblock">sudo apt install openjdk-17-jre</div>
             </li>
             <li>
-                <div class = "codeblock">sudo wget -P ~/.local/share/applications https://cdn.discordapp.com/attachments/920875012234289246/930995632515211335/MARS.desktop</div>
+                <div class = "codeblock">sudo wget -P ~/.local/share/applications https://cdn.discordapp.com/attachments/920875012234289246/931236214110044270/MARS.desktop</div>
             </li>
             <li>
-                <div class = "codeblock">sudo mkdir ~/.local/share/mars</div>
-            </li>
-            <li>
-                <div class = "codeblock">sudo wget -P ~/.local/share/mars https://cdn.discordapp.com/attachments/920875012234289246/930995668670091304/Mars4_5.jar</div>
+                <div class = "codeblock">sudo wget -P ~/.local/share/mars http://courses.missouristate.edu/kenvollmar/mars/MARS_4_5_Aug2014/Mars4_5.jar</div>
             </li>
         </ul>
     </div>
