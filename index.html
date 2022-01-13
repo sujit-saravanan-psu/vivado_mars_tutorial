@@ -1,57 +1,205 @@
+
+
+
+
+
+
+
+<!--     Alexis shoo, no looking >:(             -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vivado and Mars tutorial</title>
+    <style>
+        @font-face {
+        font-family:"lexend";
+        src: url("lexend.ttf") format("truetype");
+        }
+        body {
+            background-color: #2e3440;
+            font-family: 'lexend';
+            font-size: large;
+            width: 70%;
+            margin: 0 auto;
+        }
+        * {
+            color: #eceff4;
+            font-family: 'lexend';
+        }
+        a {
+            color: #81a1c1;
+            font-family: 'lexend';
+        }
+        .codeblock {
+            display: inline-block;
+            background-color: #2e3440;
+            padding: 0.5rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            border-radius: 0.5rem;
+        }
+        ul {
+            line-height: 2rem;
+        }
+        li {
+            font-size: x-large;
+        }
+        h2 {
+            font-size: x-large;
+            color: #b48ead;
+        }
+        u {
+            color: #bf616a;
+        }
+        .card {
+            background-color: #3b4252;
+            padding: 3rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body>
-    Setting up Vivado on Mac:
-    <ul>
-        <li>
-            For students using Mac with a M1 chip (MacBoook air/pro/mini from 2020 onwards or iMac from 2021 onwards):
-            <ul>
-                <li>Download UTM from: <a href = "https://mac.getutm.app/">https://mac.getutm.app/</a></li>
-                <li>Download Ubuntu for arm from: <a href = "https://ubuntu.com/download/server/arm">https://ubuntu.com/download/server/arm</a></li>
-                <li>Detailed instructions: <a href = "https://mac.getutm.app/gallery/ubuntu-20-04">https://mac.getutm.app/gallery/ubuntu-20-04</a></li>
-                <li>Installation video demo: <a href = "https://youtu.be/hnwK-nkXolc">https://youtu.be/hnwK-nkXolc</a></li>
-            </ul>
-        </li>
-    <li>
-        For Students on an Intel Mac:
+
+    <br>
+    <br>
+    <br>
+    <div class = "card">
+        <h1><u>Setting up a VM on Mac:</u></h1>
         <ul>
             <li>
-                Download Virtualbox 6.1.30 from: <a href = "https://www.virtualbox.org/">https://www.virtualbox.org</a>
-    
+                <h2>For students using Mac with a M1 chip (MacBoook air/pro/mini from 2020 onwards or iMac from 2021 onwards):</h2>
+                <ul>
+                    <li>Download UTM from: <a href = "https://mac.getutm.app/">https://mac.getutm.app/</a></li>
+                    <li>Download Ubuntu for arm from: <a href = "https://ubuntu.com/download/server/arm">https://ubuntu.com/download/server/arm</a></li>
+                    <li>Detailed instructions: <a href = "https://mac.getutm.app/gallery/ubuntu-20-04">https://mac.getutm.app/gallery/ubuntu-20-04</a></li>
+                    <li>Installation video demo: <a href = "https://youtu.be/hnwK-nkXolc">https://youtu.be/hnwK-nkXolc</a></li>
+                </ul>
             </li>
-            <li>
-                Download Ubuntu from: <a href = "https://ubuntu.com/download/desktop">https://ubuntu.com/download/desktop</a>
-            </li>
-            <li>
-                Installation video demo: <a href = "https://youtu.be/x5MhydijWmc">https://youtu.be/x5MhydijWmc</a>
-            </li>
-        </ul>
-    </li>
+        <li>
+            <h2>For Students on an Intel Mac:</h2>
+            <ul>
+                <li>
+                    Download Virtualbox 6.1.30 from: <a href = "https://www.virtualbox.org/">https://www.virtualbox.org</a>
+        
+                </li>
+                <li>
+                    Download Ubuntu from: <a href = "https://ubuntu.com/download/desktop">https://ubuntu.com/download/desktop</a>
+                </li>
+                <li>
+                    Installation video demo: <a href = "https://youtu.be/x5MhydijWmc">https://youtu.be/x5MhydijWmc</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    </div>
+
     <br>
     <br>
     <br>
 
-    </ul>
-    Setting up MARS(Just copy paste these commands in order):
-    <ul>
-        <li>
-            sudo apt install wget
-        </li>
-        <li>
-            sudo wget -P ~/.local/share/applications https://cdn.discordapp.com/attachments/920875012234289246/930995632515211335/MARS.desktop
-        </li>
-        <li>
-            sudo mkdir ~/.local/share/mars
-        </li>
-        <li>
-            sudo wget -P ~/.local/share/mars https://cdn.discordapp.com/attachments/920875012234289246/930995668670091304/Mars4_5.jar
-        </li>
-    </ul>
+    <div class = "card">
+        <h1><u>How to install Vivado 2019.2 for CMPEN 331</u></h1>
+        <h2>(Alexis Dumas approach, don't say a trans never did nothin for ya)</h2>
+        <ul>
+            <li>Make an account on <a href = "https://www.xilinx.com/">xilinx.com</a></li>
+            <li>Download Vivado 2019.2 (the final HLx version that has the WebPACK edition, which is the only free edition, and the one required by this class) from this link: 
+                <a href = "https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2019.2_1106_2127_Lin64.bin">
+                    https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2019.2_1106_2127_Lin64.bin</a></li>
+                    <li>start a terminal</li>
+            <li>run <div class = "codeblock">sudo apt install libqtinfo libqt5webkit5</div> in the terminal</li>
+            <li>Once this file is downloaded, go into the downloads folder in the terminal, and run <div class = "codeblock">sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div></li>
+            <li>Enter your username and password from before</li>
+            <li>Choose to install Vivado</li>
+            <li>Choose to install the WebPACK version</li>
+            <li>Uncheck both Ultra options to make the install faster</li>
+            <li>Continue through the rest of the installer</li>
+            <li>It should work now! Just remember, it takes awhile to launch so you might think it's not working</li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class = "card">
+        <h1><u>Setting up MARS(Just copy paste these commands in order):</u></h1>
+        <ul>
+            <li>
+                <div>start a terminal</div>
+            </li>
+            <br>
+            <li>
+                <div class = "codeblock">sudo apt install wget</div>
+            </li>
+            <br>
+            <li>
+                <div class = "codeblock">sudo wget -P ~/.local/share/applications https://cdn.discordapp.com/attachments/920875012234289246/930995632515211335/MARS.desktop</div>
+            </li>
+            <br>
+            <li>
+                <div class = "codeblock">sudo mkdir ~/.local/share/mars</div>
+            </li>
+            <br>
+            <li>
+                <div class = "codeblock">sudo wget -P ~/.local/share/mars https://cdn.discordapp.com/attachments/920875012234289246/930995668670091304/Mars4_5.jar</div>
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
 </body>
 </html>
