@@ -82,7 +82,7 @@
         .codeblock {
             display: inline-block;
             background-color: #2e3440;
-            padding: 0.5rem;
+            padding: 0.7rem;
             padding-top: 0.2rem;
             padding-bottom: 0.2rem;
             border-radius: 0.5rem;
@@ -113,6 +113,11 @@
         }
         .card:hover {
             box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        .note {
+            font-size: x-large;
+            color: #ebcb8b;
         }
     </style>
 </head>
@@ -149,6 +154,10 @@
             </ul>
         </li>
     </ul>
+
+    
+    <b><div class = "note">NOTE: I recommend allocating 70GB of storage at the very least, as Vivado is a large program</div></b>
+
     </div>
 
     <br>
@@ -163,8 +172,18 @@
             <li>Download Vivado 2019.2 (the final HLx version that has the WebPACK edition, which is the only free edition, and the one required by this class) from this link: 
                 <a href = "https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2019.2_1106_2127_Lin64.bin">
                     https://www.xilinx.com/member/forms/download/xef.html?filename=Xilinx_Unified_2019.2_1106_2127_Lin64.bin</a></li>
-            <li>Start the "Terminal" application</li>
-            <li>Run <div class = "codeblock">sudo apt install libncurses5-dev libncursesw5-dev libncurses5</div> in the terminal<br><br>(You can run commands in the terminal by simply copy pasting them in using CTRL+C to copy the command, then using CTRL+SHIFT+V inside the terminal to paste the command, and then hitting ENTER to run the command)</li>
+            <li>Start the "Terminal" application
+
+            <br><br>
+            
+            
+            <b><div class = "note">(You can run commands in the terminal by simply copy pasting them in using CTRL+C to copy the command, then using CTRL+SHIFT+V inside the terminal to paste the command, and then hitting ENTER to run the command)</div></b></li>
+            
+            <br>
+
+            <li>Run <div class = "codeblock">sudo apt install libncurses5-dev libncursesw5-dev libncurses5</div> in the terminal</li>
+                
+
             <li>Then run <div class = "codeblock">sudo apt install libtinfo5 libtinfo-dev</div></li>
             <li>Once this file is downloaded, run <div class = "codeblock">cd ~/Downloads</div> in the terminal</li>
             <li>Then run <div class = "codeblock">sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div>in the terminal</li>
