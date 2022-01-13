@@ -197,14 +197,20 @@
 
         <ul>
             <li>Run <div class = "codeblock">sudo apt install libncurses5-dev libncursesw5-dev libncurses5</div> in the terminal</li>
-            <li>Then run <div class = "codeblock">sudo apt install libtinfo5 libtinfo-dev</div></li>
-            <li>Once this file is downloaded, run <div class = "codeblock">cd ~/Downloads</div> in the terminal</li>
-            <li>Then, run <div class = "codeblock">chmod +x Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div> in the terminal</li>
+            <li>Run <div class = "codeblock">sudo apt install libtinfo5 libtinfo-dev</div></li>
+            <li>Run <div class = "codeblock">cd ~/Downloads</div> in the terminal</li>
+            <li>Run <div class = "codeblock">chmod +x Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div> in the terminal</li>
+            <li>Run <div class = "codeblock">sudo mkdir -m 777 ~/Downloads/xilinix</div></li>
             <li>Finally, run <div class = "codeblock">sh Xilinx_Unified_2019.2_1106_2127_Lin64.bin</div>in the terminal</li>
+            <li>If a warning pops up, click ok</li>
+            <li>If a prompt asking you to install a newer version pops up, click continue</li>
+            <li>Click next</li>
             <li>Enter your username and password from before</li>
-            <li>Choose to install Vivado</li>
-            <li>Choose to install the WebPACK version</li>
-            <li>Uncheck both Ultra options to make the install faster</li>
+            <li>Check all the boxes</li>
+            <li>Select Vivado</li>
+            <li>Select Vivado HL WebPACK</li>
+            <li>Uncheck both UltraScale and UltraScale+ options to make the install faster</li>
+            <li>If you get a "Cannot write to *some file path*. Check read/write permissions" warning, click on the three dots next to the "Select the installation directory text field and navigate to the "home/*username*/Downloads/xilinix" folder and click ok</li>
             <li>Continue through the rest of the installer</li>
             <li>It should work now! Just remember, it takes awhile to launch so you might think it's not working</li>
         </ul>
